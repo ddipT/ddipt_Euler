@@ -1,0 +1,33 @@
+#Largest Palindrome product euler problem 4
+#A palindromic number reads the same both ways. The largest palindrome made from the product of two 2-digit numbers is 9009 = 91 × 99.
+#Find the largest palindrome made from the product of two 3-digit numbers.
+
+
+
+def check_pallindrome(i):
+    char = str(i)
+
+    trues = []
+
+    for c in range(len(char)):
+        if (char[c] == char[(len(char)-(c+1))]):
+            trues.append(1)
+        else:
+            trues.append(0)
+
+    if trues.__contains__(0):
+        return(False)
+    else:
+        return(True)
+
+
+highest = 0 
+for i in range(1000):
+    for j in range(1000):
+        if highest > i*j:
+            pass
+        else:
+            if check_pallindrome(i*j) == True:
+                highest = i * j
+
+print(highest)
