@@ -12,7 +12,7 @@ Which starting number, under one million, produces the longest chain?
 
 NOTE: Once the chain starts the terms are allowed to go above one million.
 """
-
+# Need to implement a way to loop through each series and count the chain length, highest chain length where series start is below a 1000000 wins, so keep a highest counter of the chain, adjust function to output the chain when it's done not the number, but then how do you do it recursively... Need to think about this
 def collatz(i):
     print(i)
     if i == 1:
