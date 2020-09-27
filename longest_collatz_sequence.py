@@ -13,3 +13,20 @@ Which starting number, under one million, produces the longest chain?
 NOTE: Once the chain starts the terms are allowed to go above one million.
 """
 
+def collatz(i):
+    print(i)
+    if i == 1:
+        print("End of Sequence")
+        return 1
+    if i % 2 == 0:
+        return collatz(i/2)
+    else:
+        return collatz((i*3) + 1)
+
+term = 13
+
+while term != 1:
+    term = collatz(term)
+    
+    
+
