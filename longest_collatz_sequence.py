@@ -24,7 +24,7 @@ def collatz(i):
         return collatz((i*3) + 1)
 
 term = 13
-
+# add chain to collatz, add the function code to pass back max chain
 while term != 1:
     term = collatz(term)
     
