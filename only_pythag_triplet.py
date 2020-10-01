@@ -8,7 +8,7 @@ There exists exactly one Pythagorean triplet for which a + b + c = 1000.
 Find the product abc.
 """
 
-
+#Needs far more work to be good, currently just gets list of squares, not the correct challenge
 
 squares = []
 x=1
