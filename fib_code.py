@@ -1,6 +1,6 @@
 #Each bnew term in the fib sequence is generated bty adding the previous two terms. By starting with 1 and 2, the first 10 will be .... 
 #Consider each and sum whose values do not exceed four million and are even
-
+#Functionised the code
 def sum_even_fib():
     fib = [1,2]
     fibeven = []
