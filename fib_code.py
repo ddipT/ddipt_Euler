@@ -14,7 +14,7 @@ def sum_even_fib():
         
 
     max = len(fib)
-
+# Storing a list of even numbers
     for x in range(max):
         if fib[x] % 2 == 0:
             fibeven.append(fib[x])
